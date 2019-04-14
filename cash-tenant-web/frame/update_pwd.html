@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link href="../assets/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+	    <link href="../assets/css/public.css" type="text/css" rel="stylesheet">
+	    <script src="../assets/jquery/jquery.2.1.1.min.js"></script>
+	    <script src="../assets/jquery/jquery.validate.min.js"></script>
+	    <script src="../assets/jquery/jquery.validate.ext.js"></script>
+	    <script src="../assets/lay/layer/layer.js"></script>
+	    <script src="../assets/common/commonConfig.js"></script>
+	    <script src="../assets/jrain/jrain.js"></script>
+	    <script src="js/update_pwd.js"></script>
+	</head>
+	<body>
+		<div class="container">
+		    <div class="col-xs-12" style="margin-top: 15px;">
+		        <form id="dataForm" class="form-horizontal mt15" role="form">
+		        	<input type="hidden" id="b_pwd" name="b_pwd" />
+		        	<input type="hidden" id="b_url" name="b_url" value="/rest/TemplateUserBusiness/updatePwd" />
+		            <div class="form-group">
+		                <label class="col-md-3 col-sm-3 col-xs-3 control-label"><span
+		                        class="redstar">*</span> 原密码：</label>
+		                <div class="col-md-9 col-sm-9 col-xs-9 p0">
+		                    <input id="b_oldPwd" name="b_oldPwd" type="password" class="form-control fr-inline q-form-ipt ipt-350" placeholder="">
+		                </div>
+		            </div>
+		            <div class="form-group" style="margin-top: 15px;">
+		                <label class="col-md-3 col-sm-3 col-xs-3 control-label"><span
+		                        class="redstar">*</span> 新密码：</label>
+		                <div class="col-md-9 col-sm-9 col-xs-9 p0">
+		                    <input id="b_newPwd" name="b_newPwd" type="password" class="form-control fr-inline q-form-ipt ipt-350" placeholder="">
+		                </div>
+		            </div>
+		            <div class="form-group" style="margin-top: 15px;">
+		                <label class="col-md-3 col-sm-3 col-xs-3 control-label"><span
+		                        class="redstar">*</span> 确认密码：</label>
+		                <div class="col-md-9 col-sm-9 col-xs-9 p0">
+		                    <input id="b_confirmPwd" name="b_confirmPwd" type="password" class="form-control fr-inline q-form-ipt ipt-350" placeholder="">
+		                </div>
+		            </div>
+		        </form>
+		    </div>
+		</div>
+	</body>
+</html>

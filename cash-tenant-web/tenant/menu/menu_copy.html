@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>菜单复制</title>
+	    <link href="../../assets/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+	    <link href="../../assets/bootstrap-table/css/bootstrap-table.min.css" type="text/css" rel="stylesheet">
+	    <link href="../../assets/bootstrap-table/css/bootstrap-editable.css" type="text/css" rel="stylesheet">
+	    <link href="../../assets/css/public.css" type="text/css" rel="stylesheet">
+	    <script src="../../assets/jquery/jquery.2.1.1.min.js"></script>
+	    <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+	    <script src="../../assets/bootstrap-table/js/bootstrap-table.min.js"></script>
+	    <script src="../../assets/bootstrap-table/js/bootstrap-table-zh-CN.js"></script>
+	    <script src="../../assets/lay/layer/layer.js"></script>
+	    <script src="../../assets/common/commonConfig.js"></script>
+	    <script src="../../assets/jrain/jrain.js"></script>
+	    <script src="../../assets/common/common.js"></script>
+	    <script src="../../assets/jrain/json2.js"></script>
+	    <script src="../../assets/jrain/dateformat.js"></script>
+	    <script src="js/menu_copy.js"></script>
+	</head>
+	<body>
+		<div class="container">
+		    <div class="col-lg-12 col-md-12 col-sm-12">
+		        <div class="stockin-search">
+		            <div class="stockin-search-left pull-left mt15">
+		                <div id="searchForm1" class="form-inline">
+		                    <div class="fr-inline pl0">
+		                    	<input type="hidden" id="appCode" />
+		                       	租户编码：<input type="text" class="q-form-ipt ipt-120 form-control entrer-query" name="appCode" id="appCode" placeholder="请输入租户编码" maxlength="20">
+		                        <a class="q-form-btn q-form-btn-blue search fr-inline" id="serachBtn" href="javascript:void(0)">
+		                            <i class="glyphicon glyphicon-search"></i> 搜索
+		                        </a>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		        <table id="dataTable" class="mt10"></table>
+		    </div>
+		</div>
+	</body>
+</html>

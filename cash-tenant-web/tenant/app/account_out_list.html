@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>账户扣费记录</title>
+	    <link href="../../assets/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+	    <link href="../../assets/bootstrap-table/css/bootstrap-table.min.css" type="text/css" rel="stylesheet">
+	    <link href="../../assets/bootstrap-table/css/bootstrap-editable.css" type="text/css" rel="stylesheet">
+	    <link href="../../assets/css/public.css" type="text/css" rel="stylesheet">
+	    <script src="../../assets/jquery/jquery.2.1.1.min.js"></script>
+	    <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+	    <script src="../../assets/bootstrap-table/js/bootstrap-table.min.js"></script>
+	    <script src="../../assets/bootstrap-table/js/bootstrap-table-zh-CN.js"></script>
+	    <script src="../../assets/lay/layer/layer.js"></script>
+	    <script src="../../assets/lay/laydate/laydate.js"></script>
+	    <script src="../../assets/common/commonConfig.js"></script>
+	    <script src="../../assets/jrain/jrain.js"></script>
+	    <script src="../../assets/jrain/json2.js"></script>
+	    <script src="../../assets/jrain/dateformat.js"></script>
+	    <script src="js/account_out_list.js"></script>
+	</head>
+	<body style="overflow: hidden;">
+		<div class="container">
+			<div class="row">
+		        <div class="rightcont" id="rightCont">
+		            <div class="col-lg-12 col-md-12 col-sm-12">
+		                <div class="h-toolbar">
+		                    <div class="pull-right h-status-right">
+		                        <a class="q-form-btn q-form-btn-blue btn-query-data" href="javascript:void(0)" type="qyr">前一日</a>
+								<a class="q-form-btn q-form-btn-blue btn-query-data" href="javascript:void(0)" type="dqr">当前日</a>
+								<a class="q-form-btn q-form-btn-blue btn-query-data" href="javascript:void(0)" type="hyr">后一日</a>
+		                    </div>
+		                </div>
+		                <!--搜索框-->
+		                <div class="h-search">
+		                    <div class="h-search-left pull-left">
+		                        <div id="searchForm" class="form-inline">
+		                            <div class="fr-inline pl5">
+										<label class="control-label">时间：</label>
+										<input type="text" class="form-control q-form-ipt stockin-date-ipt" id="startTime" placeholder="" readonly="readonly">
+										<label class="control-label">-</label>
+										<input type="text" class="form-control q-form-ipt stockin-date-ipt" id="endTime" placeholder="" readonly="readonly">
+									</div>
+									<div class="fr-inline pl5">
+										<a class="q-form-search-btn q-form-btn-blue" href="javascript:void(0)" id="serachBtn">
+											<i class="glyphicon glyphicon-search"></i> 搜索
+										</a>
+									</div>
+		                        </div>
+		                    </div>
+		                    <div class="pull-right mt5">
+		                        <a class="q-form-btn q-form-btn-white" href="javascript:void(0)" id="searchReset"><i
+		                                class="glyphicon glyphicon-repeat"></i> 重置</a>
+		                    </div>
+		                </div>
+		                <table id="dataTable"></table>
+		            </div>
+		        </div>
+			</div>
+		</div>
+	</body>
+</html>

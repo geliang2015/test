@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>新建菜单</title>
+	    <link href="../../assets/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+	    <link href="../../assets/css/public.css" type="text/css" rel="stylesheet">
+	    <script src="../../assets/jquery/jquery.2.1.1.min.js"></script>
+	    <script src="../../assets/jquery/jquery.validate.min.js"></script>
+	    <script src="../../assets/jquery/jquery.validate.ext.js"></script>
+	    <script src="../../assets/lay/layer/layer.js"></script>
+	    <script src="../../assets/common/commonConfig.js"></script>
+	    <script src="../../assets/jrain/jrain.js"></script>
+	    <script src="js/menu_add.js"></script>
+	</head>
+	<body>
+		<div class="container">
+		    <div class="col-xs-12">
+		        <form id="dataForm" class="form-horizontal mt15" role="form">
+		        	<input type="hidden" id="b_url" name="b_url" value=""/>
+		        	<input type="hidden" id="b_id" name="b_id" />
+		        	<input type="hidden" id="b_pid" name="b_pid" />
+		        	<input type="hidden" id="b_isLeaf" name="b_isLeaf" />
+		        	<input type="hidden" id="b_status" name="b_status" value="1"/>
+		            <div class="form-group">
+		                <label class="col-md-3 col-sm-3 col-xs-3 control-label"><span
+		                        class="redstar">*</span>菜单编码：</label>
+		                <div class="col-md-9 col-sm-9 col-xs-9 p0">
+		                    <input id="b_menuCode" name="b_menuCode" type="text" class="form-control fr-inline q-form-ipt ipt-350" placeholder=""/>
+		                </div>
+		            </div>
+		            <div class="form-group">
+		                <label class="col-md-3 col-sm-3 col-xs-3 control-label"><span
+		                        class="redstar">*</span>菜单名称：</label>
+		                <div class="col-md-9 col-sm-9 col-xs-9 p0">
+		                    <input id="b_menuName" name="b_menuName" type="text" class="form-control fr-inline q-form-ipt ipt-350" placeholder=""/>
+		                </div>
+		            </div>
+		            <div class="form-group">
+		                <label class="col-md-3 col-sm-3 col-xs-3 control-label">菜单图标：</label>
+		                <div class="col-md-9 col-sm-9 col-xs-9 p0">
+		                    <input id="b_menuIcon" name="b_menuIcon" type="text" class="form-control fr-inline q-form-ipt ipt-350" placeholder=""/>
+		                </div>
+		            </div>
+		            <div class="form-group">
+		                <label class="col-md-3 col-sm-3 col-xs-3 control-label">菜单路径：</label>
+		                <div class="col-md-9 col-sm-9 col-xs-9 p0">
+		                    <input id="b_menuPath" name="b_menuPath" type="text" class="form-control fr-inline q-form-ipt ipt-350" placeholder=""/>
+		                </div>
+		            </div>
+		            <div class="form-group">
+		                <label class="col-md-3 col-sm-3 col-xs-3 control-label"><span
+		                        class="redstar">*</span>排序号：</label>
+		                <div class="col-md-9 col-sm-9 col-xs-9 p0">
+		                    <input id="b_rowSort" name="b_rowSort"  type="text" value="1000" class="form-control fr-inline q-form-ipt ipt-350" placeholder=""/>
+		                </div>
+		            </div>
+		            <div class="form-group">
+		                <label class="col-md-3 col-sm-3 col-xs-3 control-label">备注：</label>
+		                <div class="col-md-9 col-sm-9 col-xs-9 p0">
+		                    <textarea class="form-control fr-inline q-form-ipt ipt-350" id="b_remarks" name="b_remarks"></textarea>
+		                </div>
+		            </div>
+		        </form>
+		    </div>
+		</div>
+	</body>
+</html>

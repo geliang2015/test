@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>新建认证</title>
+	    <link href="../../assets/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+	    <link href="../../assets/css/public.css" type="text/css" rel="stylesheet">
+	    <script src="../../assets/jquery/jquery.2.1.1.min.js"></script>
+	    <script src="../../assets/jquery/jquery.validate.min.js"></script>
+	    <script src="../../assets/jquery/jquery.validate.ext.js"></script>
+	    <script src="../../assets/lay/layer/layer.js"></script>
+	    <script src="../../assets/common/commonConfig.js"></script>
+	    <script src="../../assets/jrain/jrain.js"></script>
+	    <script src="../../assets/jrain/json2.js"></script>
+	    <script src="../../assets/jrain/dateformat.js"></script>
+	    <script src="../../assets/jrain/jraincommon.js"></script>
+	    <script src="../../assets/jrain/Math.js"></script>
+	    <script src="js/auth_add.js"></script>
+	</head>
+	<body>
+		<div class="container">
+		    <div class="col-xs-12">
+		        <form id="dataForm" name="dataForm" class="form-horizontal mt15" role="form">
+		            <input type="hidden" id="b_url" name="url" value="" />
+		        	<input type="hidden" id="b_id" name="b_id" />
+		            <div class="form-group">
+		                <label class="col-md-3 col-sm-3 col-xs-3 control-label">
+		                    <span class="redstar">*</span>编码：
+		                </label>
+		                <div class="col-md-9 col-sm-9 col-xs-9 p0 ">
+		                    <input id="b_authCode" name="b_authCode" type="text" class="form-control fr-inline q-form-ipt ipt-350">
+		                </div>
+		            </div>
+		            <div class="form-group">
+		                <label class="col-md-3 col-sm-3 col-xs-3 control-label">
+		                    <span class="redstar">*</span>标题：
+		                </label>
+		                <div class="col-md-9 col-sm-9 col-xs-9 p0 ">
+		                    <input id="b_authTitle" name="b_authTitle" type="text" class="form-control fr-inline q-form-ipt ipt-350">
+		                </div>
+		            </div>
+		            <div class="form-group">
+		                <label class="col-md-3 col-sm-3 col-xs-3 control-label">
+		                    	描述：
+		                </label>
+		                <div class="col-md-9 col-sm-9 col-xs-9 p0 ">
+		                    <input id="b_authBody" name="b_authBody" type="text" class="form-control fr-inline q-form-ipt ipt-350" placeholder="">
+		                </div>
+		            </div>
+		            <div class="form-group">
+		                <label class="col-md-3 col-sm-3 col-xs-3 control-label">
+		                    <span class="redstar">*</span>是否必填：
+		                </label>
+		                <div class="col-md-9 col-sm-9 col-xs-9 p0 ">
+		                	<select  id="b_requires" name="b_requires" class="form-control fr-inline q-form-ipt ipt-350" placeholder="">
+		                    	<option value="1">是</option>
+		                    	<option value="2">否</option>
+		                    </select>
+		                </div>
+		            </div>
+		            <div class="form-group">
+		                <label class="col-md-3 col-sm-3 col-xs-3 control-label">状态：</label>
+		                <div class="col-md-9 col-sm-9 col-xs-9 p0">
+		                    <label class="control-label" style="cursor:pointer;">
+		                    	<input id="in-use" name="b_status" checked="checked" value="1" type="radio"/>
+		                    	启用	
+		                    </label>
+		                    <label class="control-label" style="cursor:pointer;">
+		                    	<input id="not-in-use" name="b_status" value="2" type="radio"/>
+								停用	
+		                    </label>
+		                </div>
+		            </div>
+		            <div class="form-group">
+		                <label class="col-md-3 col-sm-3 col-xs-3 control-label">
+		                    <span class="redstar">*</span>排序号：
+		                </label>
+		                <div class="col-md-9 col-sm-9 col-xs-9 p0  ">
+		                    <input value="1000" id="b_rowSort" name="b_rowSort" type="text" class="form-control fr-inline q-form-ipt ipt-350" placeholder="">
+		                </div>
+		            </div>
+		        </form>
+		    </div>
+		</div>
+	</body>
+</html>

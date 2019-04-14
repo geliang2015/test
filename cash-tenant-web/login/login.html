@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link href="../assets/css/public.css" type="text/css" rel="stylesheet">
+	    <link href="../assets/css/login.css" type="text/css" rel="stylesheet">
+	    <script src="../assets/jquery/jquery.2.1.1.min.js"></script>
+	    <script src="../assets/jquery/jquery.validate.min.js"></script>
+	    <script src="../assets/lay/layer/layer.js"></script>
+	    <script src="../assets/common/commonConfig.js"></script>
+	    <script src="../assets/jrain/jrain.js"></script>
+	    <script src="js/login.js"></script>
+	    <style>
+	    	.login_title{
+	    		font-size: 30px;
+	    		font-weight :500;
+	    		text-align: center;
+	    	}
+	    </style>
+	</head>
+	<body>
+		<div class="index_login">
+		    <div class="outer_box">
+		        <div class="big_logo"></div>
+		        <h1 class="login_title">您好,欢迎登陆西安财鸟金服-租户管理平台</h1>
+		        <div class="login_box">
+		            <form id="loginForm" >
+		                <div class="w261">
+		                    <div class="user">
+		                        <input id="userCode" name="userCode" class="input_box entrer-login" tabindex="1" placeholder="请输入用户名" accesskey="n" type="text" value="" size="25" autocomplete="off">
+		                    </div>
+		                    <div class="user">
+		                        <input id="password" name="password" class="input_box password entrer-login" tabindex="2" placeholder="请输入密码" accesskey="p" type="password" value="" size="25" autocomplete="off">
+		                    </div>
+		                    <div class="re_password">
+		                        <div class="remember">
+		                            <span>记住登录状态</span>
+		                            <div class="rem_btn">
+		                                <img src="../assets/images/rem_btn.png">
+		                            </div>
+		                            <input type="hidden" name="rememberMe" id="rememberMe" value="true">
+		                        </div>
+		                    </div>
+		                    <a href="javascript:;"><i class="button" id="subBtn">立即登录</i></a>
+		                </div>
+		                <!--w261_end-->
+		            </form>
+		        </div><!--login_box_end-->
+		    </div><!--outer_box_end-->
+		</div>
+	</body>
+</html>

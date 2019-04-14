@@ -1,0 +1,182 @@
+@charset "utf-8";
+/*head*/
+.headerbox{
+    position: fixed;
+    z-index:99;
+    width:100%;
+    color:#ffffff;
+}
+.q-head{
+    height: 50px;
+    background:#1d242c;
+}
+.header-logo{
+    height: 50px;
+    line-height: 50px;
+    background: url("../images/tlh-logo.png") no-repeat;
+    padding: 0 10px 0 50px;
+}
+.header-name{
+	margin-left:10px;
+    font-size:19px;
+    font-weight:bold;
+    letter-spacing: 3px;
+}
+.header-operate{
+    height: 50px;
+    position: relative;
+}
+.header-operate table{
+    position: absolute;
+    right: 15px;
+}
+.navbar-default{
+    background:none;
+}
+/*head*/
+.h-pic{
+    display: inline-block;
+    width: 32px;
+    height: 64px;
+    background: url(../images/drop-person.png) left center no-repeat;
+}
+.mail-bage{
+    background: #f97e80;
+    position: absolute;
+    left: 24px;
+    top: 17px;
+    padding: 3px 5px;
+    font-size: 12px;
+    font-family: Arial;
+}
+.h-username{
+    display: inline-block;
+    color: #333;
+    width: 138px;
+    height: 64px;
+}
+.com-username,.drop-person{
+    width: 138px;
+    height: 25px;
+    line-height: 25px;
+    text-align: right;
+}
+
+.h-authority{
+    display: inline-block;
+    min-width: 45px;
+    line-height: 50px;
+}
+.head-red{
+    width:7px;
+    height:7px;
+    background:#f67e7d;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+.drop-person{
+    position: relative;
+    cursor: pointer;
+}
+.h-dropicon{
+    position: absolute;
+    top: 23px;
+}
+.com-username{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.nav-dropdown-menu{
+    top: 40px;
+    padding: 0;
+}
+.nav-dropdown-menu li a{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    padding: 0 15px;
+}
+.nav-dropdown-menu li:hover a{
+    background: #2f86fd;
+    color: #fff;
+}
+#sysMes{
+    position: relative;
+}
+.little-red{
+    width:7px;
+    height:7px;
+    background:#f67e7d;
+    border-radius: 50%;
+    position: absolute;
+    top:10px;
+    left: 27px;
+}
+/*nav*/
+.q-nav li{
+    float:left;
+    height: 50px;
+    line-height:50px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 28px;
+}
+.q-nav li .qxticon{
+    color: #2f86fd;
+    opacity: 0.7;
+}
+.q-nav li p{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #ffffff;
+    line-height:50px;
+}
+.q-nav li p a{
+    display: block;
+    color:#fff;
+}.q-nav li p a:hover{
+     text-decoration: none;
+ }
+.q-nav li:hover {
+    background: #2f86fd;
+    color: #fff;
+}
+.q-nav li:hover p{
+    color: #fff;
+}
+.q-nav li.li-active{
+    background: #2f86fd;
+    color: #fff;
+}
+.q-nav li.li-active p{
+    color: #fff;
+}
+.q-nav li:hover .qxticon,.q-nav li.li-active .qxticon{
+    color: #fff;
+    opacity: 0.7;
+}
+.q-nav li:last-child{
+    margin-right: 0;
+}
+.q-second-nav{
+    background: #283038;
+    height: 50px;
+}
+.qxticon{
+    position: relative;
+    top: 0;
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-lead-out,.icon-back,.icon-lead-in{
+    font-size: 14px;
+}

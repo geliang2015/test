@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'qxticon';
+  src:  url('qxticon.eot?mrajh3');
+  src:  url('qxticon.eot?mrajh3#iefix') format('embedded-opentype'),
+  url('qxticon.ttf?mrajh3') format('truetype'),
+  url('qxticon.woff?mrajh3') format('woff'),
+  url('qxticon.svg?mrajh3#qxticon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'qxticon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bbgl:before {
+  content: "\e900";
+}
+.icon-dsq:before {
+  content: "\e901";
+}
+.icon-sbgl:before {
+  content: "\e902";
+}
+.icon-sjcy:before {
+  content: "\e903";
+}
+.icon-sjjg:before {
+  content: "\e904";
+}
+.icon-xtpz:before {
+  content: "\e905";
+}
+.icon-xxzx:before {
+  content: "\e906";
+}
+.icon-ysj:before {
+  content: "\e907";
+}
+.icon-yssj:before {
+  content: "\e908";
+}
+.icon-zdgl:before {
+  content: "\e909";
+}
+.icon-zzgl:before {
+  content: "\e90a";
+}
